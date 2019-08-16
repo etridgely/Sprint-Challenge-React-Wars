@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import StarWarsCard from "./StarWarsCard";
+import { Container } from 'semantic-ui-react'
 
 
 export default function StarWarsGrid() {
@@ -17,16 +18,19 @@ export default function StarWarsGrid() {
     }, [])
 
     return (
-        <div className="container">
+        <Container className="container">
         <div className="entry">
                 {char.map(ind => {
                 return <StarWarsCard
                    name = {ind.name}
                    height = {ind.height}
-                   mass = {ind.mass} 
+                   mass = {ind.mass}
+                   hair_color = {ind.hair_color}
+                   eye_color= {ind.eye_color}
+                   birth_year = {ind.birth_year} 
                 />;
                 })}
         </div>
-      </div>
+      </Container>
     );
 }
