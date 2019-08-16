@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is a User Interface component library.  It helps build UI components for a web page and apps.  It allows UI code to be scalable, reusable, and fun to write.   A good example is 
+
 - [ ] What does it mean to _think_ in react?
+
+    It means to plan out apps as you build them.  React forces a programmer to mock up what an app should look like.  From there, you can break the UI into a component hierarchy, i.e. modular pieces that allow for scale and reuse.  It’s DRY programming in a nut-shell.
 
 - [ ] Describe state.
 
+    State is an object that determines how a component renders and behaves.  It’s what allows for dynamic and interactive components.
+
 - [ ] Describe props.
 
+    Props is an abstract vehicle used to pass information from one component to another.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are anything that affects something outside the scope of a function being executed.  In essence, they are externalities, or intended or unintended consequences of running functions.  A good example is fetching data from an API, timers, logging, and/or manipulating the DOM.  
 
 ## Project Set Up
 
