@@ -19,10 +19,13 @@ export default function StarWarsGrid() {
     return (
         <div className="container">
         <div className="entry">
-                <StarWarsCard
-                   name = {char.name}
-                   height = {char.height} 
-                />
+                {char.map(ind => {
+                return <StarWarsCard
+                   name = {ind.name}
+                   height = {ind.height}
+                   mass = {ind.mass} 
+                />;
+                })}
         </div>
       </div>
     );

@@ -5,7 +5,8 @@ const StarWarsCard = props => {
   return (
     <div className="star-wars-card " key={props.id}>
       <h2>{props.name}</h2>
-      <div>{props.height}</div>
+      <p>Height: {props.height}</p>
+      <p>Mass: {props.mass}</p>
     </div>
   );
 };
